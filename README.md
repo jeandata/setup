@@ -29,6 +29,14 @@ Instalar os seguintes softwares:
 
     *Seu Nome: Altere pelo seu nome.
     *seu.email@exemplo.com: Altere pelo seu e-mail.
+   
+ 4- Para configurar o diretório inicial
+
+      nano ~/.bash_profile
+
+ Esse comando itá abrir o editor de texto. Dentro dele adicione o caminho que você quer ter padrão para o seu terminal do BASH, exemplo:
+
+      cd /d/Projetos/Pasta
 
  ### GitHub
  Nesse primeiro momento não é necessário instalar nada do github, mas abaixo apresentarei a ferramenta CLI para ter a integração de criação de repositórios e configurações diretamente pelo terminal do Windows/Linux/Mac.
