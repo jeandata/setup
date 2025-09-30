@@ -95,3 +95,26 @@ Instalar os seguintes softwares:
  1- Para instalar o Astro CLI.
     
     winget install -e --id Astronomer.Astro
+
+
+# Configurando o pyenv
+1- Abra o PowerShell caso você utilize o windows e cole o código:
+
+    Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+OBS: Caso de erro utilize o código abaixo:
+
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+E tecle "Sim", após isso cole novamente o primeiro código.
+
+# Configurando ambiente no vscode
+1- Ao abrir o vscode instale em usa máquina as seguintes bibliotecas:
+
+    pip install pyenv
+    pip install pipx
+    pip install poetry
+
+Utilizaremos a biblioteca Poetry como nosso organizador das dependencias, ao invés do PIP.
+
+2- Inicializaremos o Poetry
+
+      poetry init
